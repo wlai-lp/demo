@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="pfx6939e35b-13da-0026-8d20-60a80442599b" Version="2.0" IssueInstant="2022-11-30T16:07:48.198Z" Destination="http://sp.example.com/demo1/index.php?acs" InResponseTo="ONELOGIN_4fee3b046395c4e751011e97f8900b5273d56685">
+    <saml:Issuer>http://idp.example.com/metadata.php</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+    <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+  <ds:Reference URI="#pfx6939e35b-13da-0026-8d20-60a80442599b"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>MpfEYR83ts5GN+YiryCjXV6O0TY=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>H+K3b3Hi94/Km0EUGYVOJE+YAJpCHWGXAaISGDHy+dLV+X/44NgxNgyLOeKo4txyVOR5kNRQ5lA8i57yHtyhWwm3xeLxAqpRfwHLr7RmuRCP9gsrYwKpxF86Yd1cmn7fT8U+y3xpZLTy1jIyuisiDRPPCfzpkhNKkZSTp93kbcU=</ds:SignatureValue>
+<ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIICTjCCAbegAwIBAgIBADANBgkqhkiG9w0BAQ0FADBEMQswCQYDVQQGEwJ1czELMAkGA1UECAwCTlkxEzARBgNVBAoMCkxpdmVQZXJzb24xEzARBgNVBAMMCkxpdmVQZXJzb24wHhcNMjIxMTI5MTMxNTQ3WhcNMjMxMTI5MTMxNTQ3WjBEMQswCQYDVQQGEwJ1czELMAkGA1UECAwCTlkxEzARBgNVBAoMCkxpdmVQZXJzb24xEzARBgNVBAMMCkxpdmVQZXJzb24wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALYsTSHsC3kxVviN7LBkyE2ldlPPzgVQzb6aHHnY0tKfu7n/Qrb05rEB2pPJGpMJzx5Pjl4mLWspc6WrQ2sgCMr5oAyLHBgQw/BZICTTg0twEXajIzImOSzqxvvT2PYkVo9PR+nO61KGczrjzd27ECN0DiO3DbXvQGFvGbE0WA9nAgMBAAGjUDBOMB0GA1UdDgQWBBTtLuinFiVWPPP/ac1fk49rRwmrTjAfBgNVHSMEGDAWgBTtLuinFiVWPPP/ac1fk49rRwmrTjAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBDQUAA4GBABMQrF8ywzXsz0Vo8RyRN+u1YIq/vV7e0zLDTbTR7+FMiE5YMtIxGpfdUrt/g4o3+JLzNVV+I4esG5jcmfqoWHFkOnp/wYsjguZgtVw5pkfOZA2qIJSdzK1Y6Ajvmta0vkoS/K2aLVf74LE55GoQnNzRCDz1IdK5mKRBaRJWshoV</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature>
+    <samlp:Status>
+        <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="Uih1WqCnw2ix3OS1mkG7Eti86oN" IssueInstant="2022-11-30T16:07:48.198Z" Version="2.0">
+        <saml:Issuer>https://pingfederate.sys.td.com:9031</saml:Issuer>
+        <saml:Subject>
+            <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">F1602HE12HVBL7U1NAMB8AXSA</saml:NameID>
+            <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"/>
+        </saml:Subject>
+        <saml:Conditions NotBefore="2022-11-30T01:00:00.000Z" NotOnOrAfter="2022-11-30T20:00:00.000Z">
+            <saml:AudienceRestriction>
+                <saml:Audience>activetrader-ws-sts-sys</saml:Audience>
+            </saml:AudienceRestriction>
+        </saml:Conditions>
+        <saml:AuthnStatement AuthnInstant="2022-11-30T16:07:48.198Z" SessionIndex="Uih1WqCnw2ix3OS1mkG7Eti86oN">
+            <saml:AuthnContext>
+                <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml:AuthnContextClassRef>
+            </saml:AuthnContext>
+        </saml:AuthnStatement>
+        <saml:AttributeStatement>
+            <saml:Attribute Name="identifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+                <saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">42</saml:AttributeValue>
+            </saml:Attribute>
+        </saml:AttributeStatement>
+    </saml:Assertion>
+</samlp:Response>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="jGQkr4A0p4OpcN3SdXfbzRVEtQd" IssueInstant="2022-11-29T20:39:12.805Z" Version="2.0">
+   <saml:Issuer>https://pingfederate.pat.td.com:9031</saml:Issuer>
+   <ds:Signature xmlns:ds= http: www.w3.org 2000 09 xmldsig#>
+       <ds:SignedInfo>
+           <ds:CanonicalizationMethod Algorithm= http: www.w3.org 2001 10 xml-exc-c14n# />
+           <ds:SignatureMethod Algorithm= http: www.w3.org 2001 04 xmldsig-more#rsa-sha256 />
+           <ds:Reference URI="#jGQkr4A0p4OpcN3SdXfbzRVEtQd">
+               <ds:Transforms>
+                   <ds:Transform Algorithm= http: www.w3.org 2000 09 xmldsig#enveloped-signature />
+                   <ds:Transform Algorithm= http: www.w3.org 2001 10 xml-exc-c14n# />
+               </ds:Transforms>
+               <ds:DigestMethod Algorithm= http: www.w3.org 2001 04 xmlenc#sha256 />
+               <ds:DigestValue>2gL/7QEWJpYFUmjo8/PTr74z+O4f98LC3sEsdBqbLhI=</ds:DigestValue>
+           </ds:Reference>
+       </ds:SignedInfo>
+       <ds:SignatureValue>IX82mgkvhHFSiV+LiJonwXtEwhdCxnqXNBayc2+v7dmloSJl9HDz9mc97oMD+gi75x6dB+WTSpQgCNTXPQhO7PN6WBQOWad1ZPRC5Xj1pA+R3vyofnucDKR4mI0YRVfqkGQZaYSqdCjaUa/6kLbtaEztyJMCrOwIaVuQMpPdwqVpORKw4dL+nBHbBoyTyCGR4S2aFT2MBTl3jE7zf6o91Tgx34FSkOboyhWs1+stoBml90HdAOEF+M4bo+FtOHa542LqFiN8NJPQRwlRd2iY7Dwh1PS8JD9aLrtraUFh2uyl6NHdC2OZwE4OEdu5yLblP/bJVZGM8AzgrkjXDS4BNA==</ds:SignatureValue>
+       <ds:KeyInfo>
+           <ds:X509Data>
+               <ds:X509Certificate>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</ds:X509Certificate>
+           </ds:X509Data>
+       </ds:KeyInfo>
+   </ds:Signature>
+   <saml:Subject>
+       <saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">85dc5655-27c5-4e0a-a31a-7f158ad72737</saml:NameID>
+       <saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer" />
+   </saml:Subject>
+   <saml:Conditions NotBefore="2022-11-29T20:34:12.805Z" NotOnOrAfter="2022-11-29T21:09:12.805Z">
+       <saml:AudienceRestriction>
+           <saml:Audience>ewasync-ws-sts-pat</saml:Audience>
+       </saml:AudienceRestriction>
+   </saml:Conditions>
+   <saml:AuthnStatement AuthnInstant="2022-11-29T20:39:12.805Z" SessionIndex="jGQkr4A0p4OpcN3SdXfbzRVEtQd">
+       <saml:AuthnContext>
+           <saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml:AuthnContextClassRef>
+       </saml:AuthnContext>
+   </saml:AuthnStatement>
+   <saml:AttributeStatement>
+       <saml:Attribute Name="identifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+           <saml:AttributeValue xmlns:xs= http: www.w3.org 2001 XMLSchema xmlns:xsi= http: www.w3.org 2001 XMLSchema-instance xsi:type="xs:string">C0QXTYAB7X7HDJVD5EGVGJNUK</saml:AttributeValue>
+       </saml:Attribute>
+       <saml:Attribute Name="givenName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+           <saml:AttributeValue xmlns:xs= http: www.w3.org 2001 XMLSchema xmlns:xsi= http: www.w3.org 2001 XMLSchema-instance xsi:type="xs:string">YLY</saml:AttributeValue>
+       </saml:Attribute>
+   </saml:AttributeStatement>
+</saml:Assertion><samlp:Response xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Version="2.0"></samlp:Response>

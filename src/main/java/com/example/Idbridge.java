@@ -74,6 +74,8 @@ public class Idbridge {
             Document samlResponseDocument = convertSamlToDocument(decodedSamlResp);
 
             Assertion assertion = extractAssertionFromSamlResponse(samlResponseDocument);
+            AttributeExtractor attributeExtractor = new AttributeExtractor();
+            attributeExtractor.validateAssertionSignature(assertion);
             
 
         } catch (Exception e) {
@@ -81,6 +83,9 @@ public class Idbridge {
             e.printStackTrace();
         }
     }
+
+    
+
 
     private Assertion extractAssertionFromSamlResponse(Document document){
         Assertion decryptedAssertion = null;
@@ -93,6 +98,7 @@ public class Idbridge {
         try {
             // Cast the Document to a Response object
             Element element = document.getDocumentElement();
+            DefaultBootstrap.bootstrap();
             UnmarshallerFactory unmarshallerFactory = Configuration.getUnmarshallerFactory();
             Unmarshaller unmarshaller = unmarshallerFactory.getUnmarshaller(element);
             XMLObject responseXmlObj = unmarshaller.unmarshall(element);

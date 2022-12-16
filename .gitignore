@@ -1,0 +1,3 @@
+target/
+*.class
+target/test-classes/com/example/AppTest.class

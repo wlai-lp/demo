@@ -36,7 +36,8 @@ class JavaIdbridge {
 		httpConn.getOutputStream().close();
 
         System.out.println(httpConn.getResponseCode());
-
+        System.out.println(httpConn.getHeaderField("Location"));
+        
 		InputStream responseStream = httpConn.getResponseCode() / 100 == 2
 				? httpConn.getInputStream()
 				: httpConn.getErrorStream();

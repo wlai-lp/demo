@@ -10,7 +10,11 @@ import java.util.Scanner;
 class JavaIdbridge {
 
 	public static void main(String[] args) throws IOException {
-		URL url = new URL("https://idbridge-a.liveperson.net/api/account/80169848/unauth/resp/stateredirector");
+		plainHttp();
+	}
+
+    public static void plainHttp() throws IOException{
+        URL url = new URL("https://idbridge-a.liveperson.net/api/account/80169848/unauth/resp/stateredirector");
 		HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
 		httpConn.setRequestMethod("POST");
 
@@ -31,6 +35,6 @@ class JavaIdbridge {
 		Scanner s = new Scanner(responseStream).useDelimiter("\\A");
 		String response = s.hasNext() ? s.next() : "";
 		System.out.println(response);
-	}
+    }
 }
 
